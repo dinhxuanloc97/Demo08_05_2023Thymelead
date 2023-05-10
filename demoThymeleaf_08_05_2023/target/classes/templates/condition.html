@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Câu lệnh điều kiện </h1>
+<h2>1. Câu lệnh if...esle </h2>
+<!--<div th:if="${variable==product1.name}">-->
+<!--     if trả vào  đây-->
+<!--</div>-->
+<!--<div th:unless="${variable}">-->
+<!--        Else sẽ trả vào đây-->
+<!--</div>-->
+<h1>tth:witch/th:case</h1>
+<h4 th:text="${product1.name}"></h4>
+<div th:switch="${product1.price}">
+    <p th:case="'123'">product sale</p>
+    <p th:case="*">Product loading ...</p>
+</div>
+
+</div>
+</body>
+</html>

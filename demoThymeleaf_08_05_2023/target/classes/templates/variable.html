@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Variable</title>
+</head>
+<body>
+<h2> 1 , Biến : <p th:text="${name}"></p></h2>
+
+<h2> 2, Biểu thức biến: </h2>
+<p>- Biến <span th:text="${variable}"></span></p>
+<p>- Lấy giá trị của đối tượng <span th:text="*{product.name+' '+product.price+'gia '}"></span></p>
+<p>- url <a th:href="@{/index}">home </a></p> <br/>
+
+
+<h2>Đối với văn bản </h2>
+<h3>- Nối chuỗi </h3>
+<p><span th:text="${name+' '+localVariable}"></span></p>
+<h3>- Thay thế bằng chữ </h3>
+<p><span th:text="|So tien la  *{product.price}|"></span></p>
+<br/>
+</body>
+</html>

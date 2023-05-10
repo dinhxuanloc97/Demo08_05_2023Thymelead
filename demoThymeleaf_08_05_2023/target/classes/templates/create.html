@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Create product </h4>
+
+<form th:action="@{/createProduct}" th:method="POST">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" name="name"></td>
+      <span th:text="${er}"></span>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><input type="number" name="price"></td>
+      <span th:text="${ms}"></span>
+    </tr>
+    <tr>
+      <td><input type="submit" name="create"></td>
+    </tr>
+  </table>
+  <main>
+    <section th:insert="form::hienthidi"></section>
+  </main>
+</form>
+
+</body>
+</html>
